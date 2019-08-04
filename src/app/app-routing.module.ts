@@ -8,6 +8,9 @@ import { ProfileComponent } from "./components/profile/profile.component";
 import { PreviewComponent } from "./components/preview/preview.component";
 import { EnnealineComponent } from "./components/ennealine/ennealine.component";
 import { EnneatriComponent } from "./components/enneatri/enneatri.component";
+import { MbtioneComponent } from "./components/mbtione/mbtione.component";
+import { MbtitwoComponent } from "./components/mbtitwo/mbtitwo.component";
+import { MbtiblindComponent } from "./components/mbtiblind/mbtiblind.component";
 
 const routes: Routes = [
   { path: "", component: TitleComponent },
@@ -16,7 +19,10 @@ const routes: Routes = [
   { path: "profile", component: ProfileComponent },
   { path: "preview", component: PreviewComponent },
   { path: "ennealine", component: EnnealineComponent },
-  { path: "enneatri", component: EnneatriComponent }
+  { path: "enneatri", component: EnneatriComponent },
+  { path: "mbtione", component: MbtioneComponent },
+  { path: "mbtitwo", component: MbtitwoComponent },
+  { path: "mbtiblind", component: MbtiblindComponent }
 ];
 
 @NgModule({

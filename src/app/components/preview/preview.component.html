@@ -36,12 +36,12 @@
       <p class="preview__right-enneatri-mind">6</p>
       <p class="preview__right-enneatri-gut">1</p>
     </div>
-    <div class="preview__right-mbtione" *ngSwitchCase="3">
+    <div class="preview__right-mbtione" *ngSwitchCase="3" (click)="mbtione()">
       <p>established:<br />INTROVERTED</p>
       <p>exploring:</p>
       <p>INTUITION vs SENSING</p>
     </div>
-    <div class="preview__right-mbtitwo" *ngSwitchCase="4">
+    <div class="preview__right-mbtitwo" *ngSwitchCase="4" (click)="mbtitwo()">
       <p>exploring:</p>
       <p>FEELING vs THINKING</p>
       <p>exploring:</p>
@@ -49,7 +49,11 @@
         EXTRAVERSION vs INTROVERSION
       </p>
     </div>
-    <div class="preview__right-mbtiblind" *ngSwitchCase="5">
+    <div
+      class="preview__right-mbtiblind"
+      *ngSwitchCase="5"
+      (click)="mbtiblind()"
+    >
       <p>blind/neglect spot 1:</p>
       <p>INTROVERTED FEELING</p>
       <p>blind/neglect spot 2:</p>

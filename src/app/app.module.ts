@@ -12,6 +12,9 @@ import { ProfileComponent } from "./components/profile/profile.component";
 import { PreviewComponent } from './components/preview/preview.component';
 import { EnnealineComponent } from './components/ennealine/ennealine.component';
 import { EnneatriComponent } from './components/enneatri/enneatri.component';
+import { MbtioneComponent } from './components/mbtione/mbtione.component';
+import { MbtitwoComponent } from './components/mbtitwo/mbtitwo.component';
+import { MbtiblindComponent } from './components/mbtiblind/mbtiblind.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { EnneatriComponent } from './components/enneatri/enneatri.component';
     ProfileComponent,
     PreviewComponent,
     EnnealineComponent,
-    EnneatriComponent
+    EnneatriComponent,
+    MbtioneComponent,
+    MbtitwoComponent,
+    MbtiblindComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ScrollEventModule],
   providers: [],

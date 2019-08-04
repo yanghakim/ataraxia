@@ -89,4 +89,25 @@ export class PreviewComponent implements OnInit {
       this.router.navigate(["enneatri"]);
     }, 1000);
   }
+
+  mbtione() {
+    this.previewClass = "preview exit";
+    setTimeout(() => {
+      this.router.navigate(["mbtione"]);
+    }, 1000);
+  }
+
+  mbtitwo() {
+    this.previewClass = "preview exit";
+    setTimeout(() => {
+      this.router.navigate(["mbtitwo"]);
+    }, 1000);
+  }
+
+  mbtiblind() {
+    this.previewClass = "preview exit";
+    setTimeout(() => {
+      this.router.navigate(["mbtiblind"]);
+    }, 1000);
+  }
 }
