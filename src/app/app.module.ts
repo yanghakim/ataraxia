@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
+import { ScrollEventModule } from "ngx-scroll-event";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -8,6 +9,9 @@ import { TitleComponent } from "./components/title/title.component";
 import { DefinitionComponent } from "./components/definition/definition.component";
 import { PromptComponent } from "./components/prompt/prompt.component";
 import { ProfileComponent } from "./components/profile/profile.component";
+import { PreviewComponent } from './components/preview/preview.component';
+import { EnnealineComponent } from './components/ennealine/ennealine.component';
+import { EnneatriComponent } from './components/enneatri/enneatri.component';
 
 @NgModule({
   declarations: [
@@ -15,9 +19,12 @@ import { ProfileComponent } from "./components/profile/profile.component";
     TitleComponent,
     DefinitionComponent,
     PromptComponent,
-    ProfileComponent
+    ProfileComponent,
+    PreviewComponent,
+    EnnealineComponent,
+    EnneatriComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ScrollEventModule],
   providers: [],
   bootstrap: [AppComponent]
 })

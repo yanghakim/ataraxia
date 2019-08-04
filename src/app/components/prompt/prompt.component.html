@@ -1,26 +1,35 @@
 <div class="prompts">
-  <div class="mbtiprompt">
+  <div [className]="leftClass">
     <p class="title">what is your <b>Myers-Briggs</b> Personality Type?</p>
     <div class="letters">
-      <p class="letters-item">E</p>
-      <p class="letters-item">S</p>
-      <p class="letters-item">T</p>
-      <p class="letters-item">J</p>
+      <p class="letters-item" (click)="toggleMOne()">{{ mbtione }}</p>
+      <p class="letters-item" (click)="toggleMTwo()">{{ mbtitwo }}</p>
+      <p class="letters-item" (click)="toggleMThree()">{{ mbtithree }}</p>
+      <p class="letters-item" (click)="toggleMFour()">{{ mbtifour }}</p>
     </div>
   </div>
-  <div class="enneaprompt">
+  <div [className]="rightClass">
     <p class="title">what is your <b>Enneagram</b> Personality Type?</p>
     <div class="letters ennea">
-      <p class="letters-item">1</p>
-      <p class="letters-item">2</p>
-      <p class="letters-item">3</p>
-      <p class="letters-item">4</p>
-      <p class="letters-item">5</p>
-      <p class="letters-item">6</p>
-      <p class="letters-item">7</p>
-      <p class="letters-item">8</p>
-      <p class="letters-item">9</p>
+      <input type="radio" name="radio" id="1" />
+      <label for="1">1</label>
+      <input type="radio" name="radio" id="2" />
+      <label for="2">2</label>
+      <input type="radio" name="radio" id="3" />
+      <label for="3">3</label>
+      <input type="radio" name="radio" id="4" />
+      <label for="4">4</label>
+      <input type="radio" name="radio" id="5" />
+      <label for="5">5</label>
+      <input type="radio" name="radio" id="6" />
+      <label for="6">6</label>
+      <input type="radio" name="radio" id="7" />
+      <label for="7">7</label>
+      <input type="radio" name="radio" id="8" />
+      <label for="8">8</label>
+      <input type="radio" name="radio" id="9" />
+      <label for="9">9</label>
     </div>
   </div>
-  <button class="next">next</button>
+  <button [className]="buttonClass" (click)="onClick()">next</button>
 </div>

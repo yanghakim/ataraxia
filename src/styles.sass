@@ -8,11 +8,40 @@
 
   font-family: 'Source Code Pro', monospace
 
+  overflow: hidden
+
 p
   font-family: 'Source Code Pro', monospace
   font-weight: 200
 
   font-size: 3em
+
+@keyframes vibrate
+  0%
+    transform: translate(0)
+  20%
+    transform: translate(-2px, 2px)
+  40%
+    transform: translate(-2px, -2px)
+  60%
+    transform: translate(2px, 2px)
+  80%
+    transform: translate(2px, -2px)
+  100%
+    transform: translate(0)
+
+@keyframes blackToWhite
+  0%
+    background-color: black
+  100%
+    background-color: white
+
+@keyframes whiteToYellow
+  0%
+    background-color: white
+  100%
+    background-image: url("/assets/yellowtexture.jpg")
+    background-size: cover
 
 @keyframes slit-in-vertical
   0%
@@ -26,13 +55,13 @@ p
 
 @keyframes enterDown
   0%
-    transform: translateY(-100%)
+    transform: translateY(-100vh)
   100%
     transform: translateY(0)
 
 @keyframes enterUp
   0%
-    transform: translateY(100%)
+    transform: translateY(100vh)
   100%
     transform: translateY(0)
 
@@ -44,11 +73,29 @@ p
     transform: translateY(-100%)
     filter: invert(100%)
 
+@keyframes exitRight
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(100vw)
+
+@keyframes exitLeft
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(-100vw)
+
+@keyframes exitDown
+  0%
+    transform: translateY(0)
+  100%
+    transform: translateY(100vh)
+
 @keyframes exitUp
   0%
     transform: translateY(0)
   100%
-    transform: translateY(-100%)
+    transform: translateY(-100vh)
 
 @keyframes floating
   0%
@@ -84,3 +131,15 @@ p
   100%
     transform: scale(1)
     opacity: 1
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes fadeOut
+  0%
+    opacity: 1
+  100%
+    opacity: 0

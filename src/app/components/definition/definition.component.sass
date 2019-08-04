@@ -13,14 +13,20 @@
 
   color: white
 
-  animation: enterUp 1s ease-in-out forwards, exitUp 1s ease-in-out forwards 9s
+  animation: enterUp 1s ease-in-out forwards
 
   &__left
+    &.exit
+      animation: exitUp 1s ease-in-out forwards
+
+    img
+      width: 80%
 
   &__right
     width: 30%
 
-    margin-left: 5vw
+    &.exit
+      animation: exitDown 1s ease-in-out forwards
 
     &-title
       font-size: 2em

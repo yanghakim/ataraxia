@@ -9,14 +9,14 @@ import { Router } from "@angular/router";
 export class TitleComponent implements OnInit {
   username: string;
   password: string;
-  titleStyle = "title";
+  titleClass = "title";
 
   constructor(private router: Router) {}
 
   ngOnInit() {}
 
   onSubmit() {
-    this.titleStyle = "title exit";
+    this.titleClass = "title exit";
     setTimeout(() => {
       this.router.navigate(["/definition"]);
     }, 1000);
