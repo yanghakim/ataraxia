@@ -1,0 +1,23 @@
+<div [className]="titleStyle">
+  <div class="title__center">
+    <div class="title__toggles">
+      <p class="title__toggles-toggle">login</p>
+      <p class="title__toggles-toggle">register</p>
+    </div>
+    <form class="title__form" (ngSubmit)="onSubmit()">
+      <input
+        class="title__form-input"
+        name="username"
+        placeholder="username"
+        [(ngModel)]="username"
+      />
+      <input
+        class="title__form-input"
+        placeholder="password"
+        type="password"
+        [(ngModel)]="password"
+      />
+      <button class="title__form-btn" (click)="onSubmit()">login</button>
+    </form>
+  </div>
+</div>

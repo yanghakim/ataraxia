@@ -1,0 +1,95 @@
+.prompts
+  width: 100vw
+  height: 100vh
+
+  display: flex
+  flex-direction: row
+
+  font-size: 0.7em
+
+.mbtiprompt
+  width: 50%
+  height: 100vh
+
+  background-image: url("../../../assets/pinkfeather.jpg")
+  background-size: cover
+
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  color: white
+
+  animation: enterUp 1s forwards
+
+.enneaprompt
+  width: 50%
+  height: 100vh
+
+  background-image: url("../../../assets/bluespheres.jpg")
+  background-size: cover
+
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  color: white
+
+  animation: enterDown 1s forwards
+
+.letters
+  display: flex
+  flex-direction: row
+
+  &.ennea
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+
+  &-item
+    margin: 50px 30px
+    padding: 10px 25px
+
+    background-color: white
+    color: black
+    border: 2px solid black
+
+    transition: 0.5s
+    cursor: pointer
+
+    &:hover
+      background-color: black
+      color: white
+
+.next
+  width: 9%
+  height: 7%
+
+  border: 2px solid black
+
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 20%
+  margin: auto
+
+  border-radius: 10px
+
+  background-color: rgba(0, 0, 0, 0.8)
+
+  font-size: 3em
+  letter-spacing: 0.5em
+  padding-left: 0.5em
+  font-weight: 100
+  color: white
+  text-align: center
+
+  outline: none
+
+  transition: 0.5s
+  cursor: pointer
+
+  &:hover
+    background-color: black
+    color: #FAA916

@@ -1,0 +1,35 @@
+@import "../../../styles.sass"
+
+.definition
+  width: 100vw
+  height: 100vh
+
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+  background-color: black
+
+  color: white
+
+  animation: enterUp 1s ease-in-out forwards, exitUp 1s ease-in-out forwards 9s
+
+  &__left
+
+  &__right
+    width: 30%
+
+    margin-left: 5vw
+
+    &-title
+      font-size: 2em
+      letter-spacing: 5px
+
+    &-pronounce
+      font-size: 1.5em
+      margin: 10px 0 10px 20px
+
+    &-definition
+      font-size: 1.5em
+      margin: 30px 0 10px 40px
