@@ -16,6 +16,12 @@
 
   animation: fadeIn 1s ease forwards
 
+  @media (max-width: 1400px)
+    font-size: 0.8em
+
+  @media (max-width: 900px)
+    font-size: 0.6em
+
   &.exit
     animation: fadeOut 1s ease forwards
 
@@ -70,6 +76,10 @@
 
       cursor: pointer
       animation: vibrate 1s linear
+
+      @media (max-width: 900px)
+        height: 250px
+        width: 250px
 
       &:hover
         animation: vibrate 0.3s linear infinite both

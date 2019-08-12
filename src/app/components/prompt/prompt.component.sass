@@ -5,8 +5,14 @@
   display: flex
   flex-direction: row
 
-  font-size: 0.7em
+  font-size: 0.5em
 
+  @media (max-width: 1300px)
+    display: flex
+    flex-direction: column
+
+  @media (max-width: 700px)
+    font-size: 0.4em
 
 .mbtiprompt
   width: 50%
@@ -23,6 +29,10 @@
   color: white
 
   animation: enterUp 1s forwards
+
+  @media (max-width: 1300px)
+    width: 100%
+    height: 50vh
 
   &.exit
     animation: exitDown 1s ease-in-out forwards
@@ -43,6 +53,10 @@
 
   animation: enterDown 1s forwards
 
+  @media (max-width: 1300px)
+    width: 100%
+    height: 50vh
+
   &.exit
     animation: exitUp 1s ease-in-out forwards
 
@@ -56,7 +70,7 @@
 
   &-item
     margin: 50px 30px
-    padding: 10px 25px
+    padding: 10px 20px
 
     background-color: black
     color: white
@@ -64,6 +78,9 @@
 
     transition: 0.5s
     cursor: pointer
+
+    @media (max-width: 800px)
+      padding: 5px 10px
 
     &:hover
       background-color: white
@@ -77,7 +94,7 @@ input[type=radio] + label
   width: 60px
   display: inline-block
   margin: 30px
-  padding: 10px
+  padding: 15px
   background-color: black
   border: 1px solid white
 
@@ -88,6 +105,11 @@ input[type=radio] + label
   cursor: pointer
   transition: 0.5s
 
+  @media (max-width: 800px)
+    height: 40px
+    width: 40px
+    padding: 5px
+
   &:hover
     background-color: white
     color: black
@@ -97,8 +119,8 @@ input[type=radio]:checked + label
   color: black
 
 .next
-  width: 9%
-  height: 7%
+  width: 120px
+  height: 40px
 
   border: 2px solid black
 
@@ -108,11 +130,7 @@ input[type=radio]:checked + label
   bottom: 20%
   margin: auto
 
-  border-radius: 10px
-
   background-color: rgba(0, 0, 0, 0.8)
-
-  border: 1px solid white
 
   font-size: 3em
   letter-spacing: 0.5em
@@ -127,6 +145,10 @@ input[type=radio]:checked + label
   cursor: pointer
 
   animation: enterUp 1s forwards
+
+  @media (max-width: 1300px)
+    top: 0
+    bottom: 0
 
   &.exit
     animation: exitUp 1s ease-in-out forwards

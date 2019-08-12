@@ -10,14 +10,31 @@
   justify-content: center
   align-items: center
 
+  @media (max-width: 1300px)
+    font-size: 0.7em
+
+  @media (max-width: 900px)
+    font-size: 0.5em
+
+    display: flex
+    flex-direction: column
+
   &.exit
     animation: blackToWhite 1s ease reverse forwards
 
   &__left
     width: 40%
 
+    @media (max-width: 900px)
+      width: 60%
+
   &__right
     width: 45%
+
+    @media (max-width: 900px)
+      width: 60%
+
+      margin-top: 30px
 
     &-ennealine
       display: flex
@@ -39,6 +56,13 @@
 
         background-color: black
 
+        @media (max-width: 1300px)
+          margin: 0 10px
+
+        @media (max-width: 900px)
+          width: 100px
+          margin: 0 10px
+
     &-enneatri
       display: flex
       flex-direction: row
@@ -55,6 +79,10 @@
 
       cursor: pointer
       animation: vibrate 1s linear
+
+      @media (max-width: 900px)
+        height: 300px
+        width: 300px
 
       &:hover
         animation: vibrate 0.3s linear infinite both
@@ -110,6 +138,11 @@ input[type=radio] + label
 
   cursor: pointer
   transition: 0.5s
+
+  @media (max-width: 900px)
+    height: 5px
+    width: 5px
+    padding: 5px
 
   &:hover
     background-color: black
