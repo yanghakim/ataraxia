@@ -1,0 +1,1 @@
+{"version":3,"file":"scroll.module.js","sourceRoot":"","sources":["scroll.module.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAAyC;AACzC,0CAA+C;AAC/C,uDAAqD;AAarD;IAAA;IAAiC,CAAC;IAArB,iBAAiB;QAX7B,eAAQ,CAAC;YACR,OAAO,EAAE;gBACP,qBAAY;aACb;YACD,YAAY,EAAE;gBACZ,kCAAe;aAChB;YACD,OAAO,EAAE;gBACP,kCAAe;aAChB;SACF,CAAC;OACW,iBAAiB,CAAI;IAAD,wBAAC;CAAA,AAAlC,IAAkC;AAArB,8CAAiB"}
