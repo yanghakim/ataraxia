@@ -16,9 +16,9 @@ export class DefinitionComponent implements OnInit {
     setTimeout(() => {
       this.leftClass = "definition__left exit";
       this.rightClass = "definition__right exit";
-    }, 9000);
+    }, 5000);
     setTimeout(() => {
       this.router.navigate(["prompt"]);
-    }, 10000);
+    }, 6000);
   }
 }
