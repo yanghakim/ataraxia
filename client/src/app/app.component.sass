@@ -1,0 +1,44 @@
+@import "../styles.sass"
+
+.app
+  width: 100vw
+  height: 100vh
+
+  margin: 0
+  padding: 0
+
+  overflow-x: hidden
+
+  background-color: black
+
+  &::-webkit-scrollbar
+    width: 0
+    height: 0
+
+  &__sidebar
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    position: absolute
+    left: 5%
+    top: 5%
+
+    z-index: 2
+
+    img
+      min-height: 80px
+      min-width: 80px
+      animation: slit-in-vertical 1.1s ease-out forwards, floating 2s ease-in-out 1.1s infinite alternate, invertBg 2s ease infinite alternate
+
+    &-header
+      color: white
+      font-size: 2em
+
+      margin-left: 40px
+
+    &-subheader
+      color: white
+      font-size: 1em
+
+      margin-left: 43px

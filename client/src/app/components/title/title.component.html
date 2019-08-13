@@ -1,0 +1,59 @@
+<div [className]="titleClass">
+  <div class="title__center">
+    <div class="title__toggles">
+      <p class="title__toggles-toggle" (click)="toggleView('login')">login</p>
+      <p class="title__toggles-toggle" (click)="toggleView('register')">
+        register
+      </p>
+    </div>
+    <form [className]="loginClass" (ngSubmit)="onLoginSubmit()">
+      <input
+        class="title__form-input"
+        name="login"
+        placeholder="email"
+        [(ngModel)]="email"
+      />
+      <input
+        class="title__form-input"
+        name="login"
+        placeholder="password"
+        type="password"
+        [(ngModel)]="password"
+      />
+      <button class="title__form-btn" (click)="onLoginSubmit()">
+        {{ loginBtnText }}
+      </button>
+    </form>
+    <form [className]="registerClass" (ngSubmit)="onRegisterSubmit()">
+      <input
+        class="title__form-input"
+        name="register"
+        placeholder="name"
+        [(ngModel)]="name"
+      />
+      <input
+        class="title__form-input"
+        name="register"
+        placeholder="email"
+        [(ngModel)]="email"
+      />
+      <input
+        class="title__form-input"
+        name="register"
+        placeholder="password"
+        type="password"
+        [(ngModel)]="password"
+      />
+      <input
+        class="title__form-input"
+        name="register"
+        placeholder="confirm password"
+        type="password"
+        [(ngModel)]="password2"
+      />
+      <button class="title__form-btn" (click)="onRegisterSubmit()">
+        {{ registerBtnText }}
+      </button>
+    </form>
+  </div>
+</div>

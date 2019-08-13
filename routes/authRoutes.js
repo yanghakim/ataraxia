@@ -3,10 +3,6 @@ const mongoose = require("mongoose");
 const User = mongoose.model("users");
 
 module.exports = app => {
-  app.get("/ping", function(req, res) {
-    res.send({ ping: "hello this is server and I am alive!" });
-  });
-
   app.post(
     "/api/login",
     handleLogin,
@@ -53,7 +49,7 @@ module.exports = app => {
   );
 
   async function handleRegister(req, res, next) {
-    let { email, password } = req.body;
+    let { name, email, password } = req.body;
 
     email = email.toLowerCase();
     email = email.trim();
@@ -67,6 +63,7 @@ module.exports = app => {
     const user = await new User();
     user.email = email;
     user.password = user.generateHash(password);
+    user.name = name;
     user.save((err, user) => {
       if (err) {
         return console.log(err);

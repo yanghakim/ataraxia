@@ -3,7 +3,7 @@
 // modules =================================================
 const express = require("express");
 const mongoose = require("mongoose");
-const cookieSession = require("cookie-session");
+const cors = require("cors");
 const passport = require("passport");
 const bodyParser = require("body-parser");
 const keys = require("./config/keys");
@@ -20,30 +20,26 @@ require("./models/User");
 // connect to mongoDB
 mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
 
-// get all data/stuff of the body (POST) parameters
-// parse application/json
-app.use(bodyParser.json());
-app.use(
-  cookieSession({
-    maxAge: 30 * 24 * 60 * 60 * 1000,
-    keys: [keys.cookieKey]
-  })
-);
-
 // connect app to Passport.js
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use(cors());
+
+// get all data/stuff of the body (POST) parameters
+// parse application/json
+app.use(bodyParser.json());
+
 require("./routes/authRoutes")(app);
 
-app.use(express.static(path.join(__dirname, "public/dist/ataraxia")));
+app.use(express.static(path.join(__dirname, "client/dist/ataraxia")));
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("public/dist"));
+  app.use(express.static("client/dist"));
 
   app.get("*", (req, res) => {
     res.sendFile(
-      path.resolve(__dirname, "public", "dist", "ataraxia", "index.html")
+      path.resolve(__dirname, "client", "dist", "ataraxia", "index.html")
     );
   });
 }

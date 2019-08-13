@@ -1,0 +1,158 @@
+.prompts
+  width: 100vw
+  height: 100vh
+
+  display: flex
+  flex-direction: row
+
+  font-size: 0.5em
+
+  @media (max-width: 1300px)
+    display: flex
+    flex-direction: column
+
+  @media (max-width: 700px)
+    font-size: 0.4em
+
+.mbtiprompt
+  width: 50%
+  height: 100vh
+
+  background-image: url("../../../assets/pinkfeather.jpg")
+  background-size: cover
+
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  color: white
+
+  animation: enterUp 1s forwards
+
+  @media (max-width: 1300px)
+    width: 100%
+    height: 50vh
+
+  &.exit
+    animation: exitDown 1s ease-in-out forwards
+
+.enneaprompt
+  width: 50%
+  height: 100vh
+
+  background-image: url("../../../assets/bluespheres.jpg")
+  background-size: cover
+
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  color: white
+
+  animation: enterDown 1s forwards
+
+  @media (max-width: 1300px)
+    width: 100%
+    height: 50vh
+
+  &.exit
+    animation: exitUp 1s ease-in-out forwards
+
+.letters
+  display: flex
+  flex-direction: row
+
+  &.ennea
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+
+  &-item
+    margin: 50px 30px
+    padding: 10px 20px
+
+    background-color: black
+    color: white
+    border: 1px solid white
+
+    transition: 0.5s
+    cursor: pointer
+
+    @media (max-width: 800px)
+      padding: 5px 10px
+
+    &:hover
+      background-color: white
+      color: black
+
+input[type=radio]
+  display: none
+
+input[type=radio] + label
+  height: 60px
+  width: 60px
+  display: inline-block
+  margin: 30px
+  padding: 15px
+  background-color: black
+  border: 1px solid white
+
+  text-align: center
+  font-size: 2.5em
+  font-weight: 100
+
+  cursor: pointer
+  transition: 0.5s
+
+  @media (max-width: 800px)
+    height: 40px
+    width: 40px
+    padding: 5px
+
+  &:hover
+    background-color: white
+    color: black
+
+input[type=radio]:checked + label
+  background-color: white
+  color: black
+
+.next
+  width: 120px
+  height: 40px
+
+  border: 2px solid black
+
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 20%
+  margin: auto
+
+  background-color: rgba(0, 0, 0, 0.8)
+
+  font-size: 3em
+  letter-spacing: 0.5em
+  padding-left: 0.5em
+  font-weight: 100
+  color: white
+  text-align: center
+
+  outline: none
+
+  transition: 0.5s
+  cursor: pointer
+
+  animation: enterUp 1s forwards
+
+  @media (max-width: 1300px)
+    top: 0
+    bottom: 0
+
+  &.exit
+    animation: exitUp 1s ease-in-out forwards
+
+  &:hover
+    background-color: black
+    color: #FAA916
