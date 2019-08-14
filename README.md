@@ -8,12 +8,6 @@
 
 <h4 align="center">A Christian Personality experience built upon the <a href="https://twitter.com/mern_io" target="_blank">MEAN Stack</a>.
 </h4>
-<p align="center">
-  <a href="https://scrutinizer-ci.com/g/yanghakim/intercessor/?branch=master">
-    <img src="https://scrutinizer-ci.com/g/yanghakim/intercessor/badges/quality-score.png?b=master"
-         alt="scrutinizer">
-  </a>
-</p>
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
@@ -22,7 +16,7 @@
   <a href="#you-may-also-like">Related</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/yanghakim/portfolio/master/src/images/intweb/intweb-sanct.jpg)
+![screenshot](https://raw.githubusercontent.com/yanghakim/portfolio/master/src/images/ataraxia/login.png)
 
 ## Key Features
 
