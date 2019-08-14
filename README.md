@@ -20,35 +20,35 @@
 
 ## Key Features
 
-* MEAN Stack
-* Learning TypeScript
-* HttpClient, Router
-* Observables
-* Authentication (Passport.js)
-* Interactive experience
+  * MEAN Stack
+  * Learning TypeScript
+  * HttpClient, Router
+  * Observables
+  * Authentication (Passport.js)
+  * Interactive experience
 
 ## How To Use
 
-1. Create an account.
-2. Play around with buttons on Personality prompts.
-3. Switch around the different (STATIC) previews of personalities.
-4. Click on the shaking blocks on each page to expand for more detail.
+ 1. Create an account.
+ 2. Play around with buttons on Personality prompts.
+ 3. Switch around the different (STATIC) previews of personalities.
+ 4. Click on the shaking blocks on each page to expand for more detail.
 
 ## Credits
 
 This software uses the following open source packages:
 
-- [Node.js](https://nodejs.org/)
-- [Angular](https://angular.io/)
-- [Passport.js](http://www.passportjs.org/)
-- [Express.js](https://expressjs.com/)
+  * [Node.js](https://nodejs.org/)
+  * [Angular](https://angular.io/)
+  * [Passport.js](http://www.passportjs.org/)
+  * [Express.js](https://expressjs.com/)
 
-- [Icon made by Freepik from www.flaticon.com](www.flaticon.com)
+  * [Icon made by Freepik from www.flaticon.com](www.flaticon.com)
 
-## You may also like...
+## You may also like
 
-- [Elysian](https://github.com/yanghakim/elysian) - A Christian Notetaking app (wip)
-- [Intercessor](https://github.com/yanghakim/intercessor) - A Prayer Sharing app
+  * [Elysian](https://github.com/yanghakim/elysian) - A Christian Notetaking app (wip)
+  * [Intercessor](https://github.com/yanghakim/intercessor) - A Prayer Sharing app
 
 ---
 
