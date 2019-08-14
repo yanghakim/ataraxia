@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">A Christian Personality experience built upon the <a href="https://twitter.com/mern_io" target="_blank">MEAN Stack</a>.
+<h4 align="center">(WIP) A Christian Personality experience built upon the <a href="https://twitter.com/mern_io" target="_blank">MEAN Stack</a>.
 </h4>
 <p align="center">
   <a href="https://www.codacy.com/app/yanghakim/ataraxia?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yanghakim/ataraxia&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/7385ecb44b9f4d3c9ec7972d8aad6e00"/></a>
