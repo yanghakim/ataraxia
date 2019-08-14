@@ -20,6 +20,8 @@
 
 ## Key Features
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ac211de4f534e669bb53e53f70e57ec)](https://app.codacy.com/app/yanghakim/ataraxia?utm_source=github.com&utm_medium=referral&utm_content=yanghakim/ataraxia&utm_campaign=Badge_Grade_Dashboard)
+
   * MEAN Stack
   * Learning TypeScript
   * HttpClient, Router
