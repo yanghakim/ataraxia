@@ -36,6 +36,17 @@
  2. Play around with buttons on Personality prompts.
  3. Switch around the different (STATIC) previews of personalities.
  4. Click on the shaking blocks on each page to expand for more detail.
+ 
+## What I Anticipate Learning
+I : Angular
+- learning Angular architecture and best structuring practices
+- Angular CLI commands
+- How Angular compares to React
+- TypeScript
+
+II : Enjoyment
+- personal enjoyment of exploring human personality
+- creating an interactive and flashy design
 
 ## Credits
 
