@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://ataraxia.netlify.com/"><img src="https://raw.githubusercontent.com/yanghakim/ataraxia/master/client/favicon.ico" alt="ataraxia" width="200"></a>
+  <a href="https://ataraxia.netlify.com/"><img src="https://raw.githubusercontent.com/yanghakim/ataraxia/master/client/src/favicon.ico" alt="ataraxia" width="200"></a>
   <br>
   ataraxia
   <br>
